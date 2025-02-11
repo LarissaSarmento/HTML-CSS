@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(231, 231, 231);
+        }
+
+        thead > tr > th {
+            position: sticky; /**/
+            top: 0;
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(odd){ /*Ou usar 2n+1*/
+            background-color: rgba(255, 228, 196, 0.616);
+        }
+                                    /*Ou usar 2n*/
+            tbody > tr:nth-child(even){ /*É usado para selecionar elementos com base em sua posição dento do elemento pai*/
+              background-color: rgba(204, 202, 202, 0.774);  
+            }
+
+        tfoot {
+            background-color: rgba(168, 166, 166, 0.493);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+          CAPTION - Legenda da tabela(Não pode usar tr nem td)
+          THEAD
+            TR, TD, TH
+          TBODY
+            TR, TD, TH
+          TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- Cabeçalho para uma COLUNA-->
+                <th scope="col">População</th> <!-- Cabeçalho para uma COLUNA-->
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.149</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>47.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- Cabeçalho para uma LINHA-->
+                <td>00000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
