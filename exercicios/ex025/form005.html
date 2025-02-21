@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="r" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend> <!--Para alternar os marcados precisa deixar o mesmo nome, isso só funciona em radio, chcekbox não-->
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F" checked> <label for="ifem">Feminino</label> <!--Checked ele já vem padrão marcado e colocar no input, no radio só pode deixar um item, já no checkbox mais de 1-->
+        </fieldset> <!--Usar o value pois ele define qual valor será enviado pelo servidor quando o formulário for submetido-->
+        <fieldset>
+            <legend>
+                Esportes Favoritos
+            </legend>
+               <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol: </label> <br>
+               <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete: </label> <br>
+               <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação: </label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
