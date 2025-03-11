@@ -22,7 +22,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -30,6 +30,9 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.444);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #login > #imagem {
@@ -37,11 +40,20 @@ main {
     background:  rgb(233, 210, 255) url(imagens/pexels-gdtography-277628-911738.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
-    width: 200px;
+    width: 300px;
     height: 200px;
 } 
 
 #login > #formulario {
     display: block;
     padding: 10px;
+}
+
+#formulario {
+  text-align: center;  
+  margin-bottom: 10px;
+}
+
+#formulario > p {
+    font-size:0.8em;
 }
