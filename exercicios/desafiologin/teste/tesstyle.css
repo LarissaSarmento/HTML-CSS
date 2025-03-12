@@ -28,16 +28,18 @@ main {
     background-color: white;
     width: 300px;
     height: 500px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+
+    text-align: center;
 
 }
 
 #login > #imagem {
     display:block;
-    background: black url(imagens/pexels-gdtography-277628-911738.jpg) no-repeat;
+    background: black url(../imagens/pexels-gdtography-277628-911738.jpg) no-repeat;
     width: 300px;
     height: 200px;
     background-size: cover;
-    border-radius:20px 20px 0px 0px; 
+    /* border-radius:20px 20px 0px 0px;  */
     
 }
